@@ -1,0 +1,7 @@
+# dependiences
+Django
+djangorestframework
+markdown
+django-filter
+drf-spectacular
+djangorestframework-simplejwt

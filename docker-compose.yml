@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+      - web-data:/app/data
+    ports:
+      - "8000:8000"
+
+volumes:
+  web-data:
