@@ -29,8 +29,7 @@ docker compose up --build -d
 In the running container:
 
 ```bash
-Copy code
-docker-compose exec web python manage.py migrate
+docker-compose exec <container> python manage.py migrate
 ```
 ## Project Extension Developer Guide (Custom API)
 ### this guide covers:
