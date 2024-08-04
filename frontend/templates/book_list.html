@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Recommendations</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Book Recommendations</h1>
+    <div id="books">
+        {% for book in books %}
+            <div class="book">
+                <h2>{{ book.title }}</h2>
+                <p>{{ book.author }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
