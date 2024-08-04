@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import BookViewsets, RecommendationViewsets, CommentViewsets, LikeViewsets
+from .views import BookViewsets, RecommendationViewsets, CommentViewsets, LikeViewsets, GoogleBookView
 from rest_framework.routers import DefaultRouter
 
 
@@ -10,4 +10,8 @@ router.register(r'recommendations', RecommendationViewsets, basename='recommenda
 router.register(r'comment', CommentViewsets, basename='comments')
 router.register(r'like', LikeViewsets, basename='likes')
 
-urlpatterns = router.urls
+urlpatterns = [
+    path("google_library/", GoogleBookView.as_view() , name="googleLibrary")
+]
+
+urlpatterns += router.urls

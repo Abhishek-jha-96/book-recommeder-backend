@@ -45,9 +45,3 @@ class LikeSerializer(serializers.ModelSerializer):
         model = Like
         fields = "__all__"
 
-
-class GoogleBookSerializer(serializers.Serializer):
-    """
-    serializer for comments
-    """        
-    pass
