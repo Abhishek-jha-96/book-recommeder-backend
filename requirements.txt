@@ -5,3 +5,4 @@ markdown
 django-filter
 drf-spectacular
 djangorestframework-simplejwt
+django-rest-url-filter
